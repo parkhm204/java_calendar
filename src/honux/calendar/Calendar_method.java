@@ -18,12 +18,19 @@ public class Calendar_method {
 		Scanner scanner = new Scanner(System.in);
 		Calendar_method cal = new Calendar_method();
 		
-		System.out.println("달을 입력하세요");
-		int month = scanner.nextInt();
-
-		System.out.printf("%d월은 %d일까지 있습니다. \n", month, cal.getMaxDaysOfMonth(month));
+		System.out.println("반복횟수를 입력하세요.");
+		int repeat = scanner.nextInt();
 		
-		scanner.close();
+		for (int i=0; i < repeat; i++) {
+			System.out.println("달을 입력하세요");
+			int month = scanner.nextInt();
+
+			System.out.printf("%d월은 %d일까지 있습니다. \n", month, cal.getMaxDaysOfMonth(month));
+			
+			
+		}
+			System.out.println("\n반복이 완료되었습니다. ^^ ");
+			scanner.close();
 	}
 
 }
